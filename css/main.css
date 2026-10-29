@@ -1,19 +1,19 @@
 *{
-    margin: 1px;
-    padding:2px;
-    border:border-box;
+    margin: 0;
+    padding: 0;
+    border:border-box; /*que se adapte el border del navegador*/
 }
-
-body {
+.contenedor-grid {
   display: grid;
-  grid-template-columns: 0.2fr 2fr 2fr 1.7fr;
+  grid-template-columns: 1fr 3 fr 3fr 2 fr;
   /*que las filas se adapten solas al contenido*/
   grid-template-rows: auto;
   gap: 20px;
 }
 
 nav.menuPrincipal ul li {
-    display: block;
+    display: inline-block;
+    grid-template-rows: auto;
     text-align: center; /* Centrado */
     margin: 5px 5px;
     border-width: 3px;/*ancho uniform de 5px de todos los lados*/
@@ -27,7 +27,7 @@ p{
 }
 
 /*en cabezado*/
-.cabezeraMain
+.cabeceraMain
 {
     text-align: center; /* Centrado */
     font-size: 2.2rem;
@@ -65,16 +65,16 @@ h3{
     height: 50px; /*Ocupa100% del alto de la columna grid*/
     max-width:50px /*tope*/
     object-fit: cover; /*Que se adapte perfectamente sin deformarse*/
-    margin:0 auto;
+    margin: auto;
     }
 
 .caja2Imagen {
-    grid-column: 2; /* que vaya a la primera columna*/    
+    grid-column: 2; /* que vaya a la segunda columna*/    
 }
 
 .caja2Imagen img {
     width: 100%; /*Ocupa el 100% del ancho de la columna grid*/
-    height: 100%; /*Ocupa100% del alto de la columna grid*/
+    height: auto; /*Ocupa100% del alto de la columna grid*/
     object-fit: cover; /*Que se adapte perfectamente sin deformarse*/
     }
 
@@ -90,24 +90,51 @@ h3{
     }
 
 .caja4Imagen {
-    grid-column: 3; /* que vaya a la primera columna*/    
+    grid-column: 3; /* que vaya a la tercera columna*/    
 }
 
 .caja4Imagen img {
     width: 100%; /*Ocupa el 100% del ancho de la columna grid*/
-    height: 100%; /*Ocupa100% del alto de la columna grid*/
+    height: auto; /*Ocupa100% del alto de la columna grid*/
     object-fit: cover; /*Que se adapte perfectamente sin deformarse*/
 }
 
 .caja5Imagen {
-    grid-column: 4; /* que vaya a la primera columna*/    
+    grid-column: 4; /* que vaya a la cuarta columna*/    
 }
 
 .caja5Imagen img {
     width: 100%; /*Ocupa el 100% del ancho de la columna grid*/
-    height: 100%; /*Ocupa100% del alto de la columna grid*/
+    height: auto; /*Ocupa100% del alto de la columna grid*/
     object-fit: cover; /*Que se adapte perfectamente sin deformarse*/
 }
+
+.caja6imagen {
+    grid-column: 1; /* que vaya a la primera columna*/    
+}
+
+.caja6imagen img {
+    display: bloque;
+    width: 100%; /*Ocupa el 100% del ancho de la columna grid*/
+    height: 50px; /*Ocupa100% del alto de la columna grid*/
+    max-width:50px /*tope*/
+    object-fit: cover; /*Que se adapte perfectamente sin deformarse*/
+    margin: auto;
+    }
+
+
+.caja7imagen {
+    grid-column: 1; /* que vaya a la primera columna*/    
+}
+
+.caja7imagen img {
+    display: bloque;
+    width: 100%; /*Ocupa el 100% del ancho de la columna grid*/
+    height: 50px; /*Ocupa100% del alto de la columna grid*/
+    max-width:50px /*tope*/
+    object-fit: cover; /*Que se adapte perfectamente sin deformarse*/
+    margin: auto;
+    }
 
 footer {
     grid-column: 1 / 5; /* Que sea lo mismo que el encabezado*/
@@ -116,3 +143,10 @@ footer {
     padding: 20px 0;
 }
 
+/*adaptación para móviles*/
+@media screen and (min-width:768px) {
+    .cabeceraMain div {
+        width: 250px;
+    }
+   
+}

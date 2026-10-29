@@ -5,20 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conociendo A Uno Mismo</title>
     <link rel="stylesheet" href="css/main.css">
+    
     <!--encabezado-->
 </head>
 <body>
-    <div class="contenedor-grid">
-        <div class="caja-imagen"><img src="./image/banner/2.jpg" alt= "Somos Múltiples"></div>
-    </div>
-        <p class="cabezeraMain">Bienvenidos</p>
-            <nav class="menuPrincipal">          
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+    <header>
+        <nav class="menuPrincipal">          
+               <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="pages/sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="pages/servicios.html">Servicios</a></li>
+                    <li><a href="pages/contacto.html">Contacto</a></li>           
                 </ul>
-            </nav>
+            </nav> 
+
+    <h1>El despertar</h1>
+        <div class="contenedor-grid">
+            <div class="caja-imagen"><img src="./image/banner/2.jpg" alt= "Somos Múltiples"></div>
+        </div>
+        <p class="cabeceraMain">Bienvenidos</p>
+           
     
     <!--Contenido principal-->
     <main>
@@ -30,12 +36,13 @@
     </main>
      <header id="inicio">
         <h1 class="padding-box">La Multiplicidad del Yo</h1>
-            <div class="caja-video"
-            <video width="100%" height="80%" controls poster="ruta/de/tu/poster.jpg">
-            <source src="video.mp4" type="assets/videos/.mp4>
+           <div class="caja-video">
+            <video autoplay loop muted playsinline poster="image/banner/7.jpg">
+            <source src="video/mont.mp4" type="video/mp4">
             <source src="video.ogg" type="video/ogg">
             Tu navegador no soporta la reproducción de video.
-            </video>            
+        </video>
+                           
      </header>
 
     <!--Sección Servivios-->
@@ -71,12 +78,13 @@
 
         </aside>
     </main>
-
+</header>
     <!-- Pie de Página -->
     <footer>
         <p>&copy; 2026 Conociendo a uno mismo. Todos los derechos reservados.</p>
-            <section class="content-box" id="contacto"></section>
+            <section class="content-box" id="contacto">
         <p><a href="mailto:contacto@mipaginaweb.com">contacto@mipaginaweb.com</a></p>
+        </section>
     </footer>          
 </body>
 </html>
